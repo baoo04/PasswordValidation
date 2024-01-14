@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <main class="d-flex w-100">
+            <div class="main__left">
+                <img src="./assets/img/mainImage.svg" alt="Login Image" />
+            </div>
+            <div class="main__right d-flex">
+                <div class="main__right--content align-self-center">
+                    <p>Welcome back</p>
+                    <h1>Log in to your account</h1>
+                    <span>Email</span>
+                    <input
+                        id="emailInput"
+                        placeholder="Enter email"
+                        type="text"
+                        style="
+                            display: block;
+                            color: #333;
+                            width: 347px;
+                            height: 50px;
+                            border: 1px solid #ddd;
+                            border-radius: 5px;
+                        "
+                    />
+                    <div class="notify"></div>
+                    <span>Password</span>
+                    <input
+                        id="passwordInput"
+                        placeholder="Enter password"
+                        type="password"
+                        style="
+                            display: block;
+                            color: #333;
+                            width: 347px;
+                            height: 50px;
+                            border: 1px solid #ddd;
+                            border-radius: 5px;
+                        "
+                    />
+                    <div class="help d-flex">
+                        <span class="help__left">
+                            <input type="checkbox" class="checkbox" />
+                            Remember me
+                        </span>
+                        <a href="!#" class="help__right"> Forgot password? </a>
+                    </div>
+                    <button class="login__now border-0">
+                        <span>Login now</span>
+                    </button>
+                    <button class="login__google">
+                        <img
+                            src="./assets/img/google-icon.svg"
+                            alt="google icon"
+                        />
+                        <span>Or sign-in with Google</span>
+                    </button>
+                    <div class="login__more d-flex">
+                        <p>Dont have an account?</p>
+                        <a href="!#">Join free today</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

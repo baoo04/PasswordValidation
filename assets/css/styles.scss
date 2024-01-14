@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#emailInput,
+#passwordInput {
+    font-size: 1.6rem;
+    padding-left: 10px;
+}
+
+main {
+    .main__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        .login__now {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 347px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            background: #04c35c;
+            span {
+                color: #fff;
+                font-family: Roboto;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+        }
+        .login__google {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 11px;
+            width: 347px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            background: var(--800, #2d3748);
+            img {
+                width: 8%;
+            }
+            span {
+                color: #fff;
+                font-family: Roboto;
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+        }
+        .login__more {
+            margin-top: 70px;
+            justify-content: center;
+            gap: 5px;
+            p {
+                color: #616161;
+                font-family: Roboto;
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+            a {
+                color: var(--700, #2b6cb0);
+                font-family: Roboto;
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+        }
+    }
+    .main__right--content {
+        & > p {
+            color: var(--800, #2d3748);
+            font-family: Roboto;
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+        & > h1 {
+            color: var(--900, #1a202c);
+            font-family: Roboto;
+            font-size: 3rem;
+            font-weight: 700;
+            padding-bottom: 24px;
+        }
+        & > span {
+            color: var(--700, #4a5568);
+            font-family: Roboto;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 11px;
+            margin-top: 11px;
+            display: inline-block;
+        }
+        .help {
+            margin-top: 28px;
+            margin-bottom: 27px;
+            justify-content: space-between;
+            .help__left,
+            .help__right {
+                color: var(--800, #2d3748);
+                font-family: Roboto;
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+            .help__left {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+                .checkbox {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    border: 2px solid bisque;
+                    appearance: none;
+                    outline: none;
+                    cursor: pointer;
+                    fill: var(--100, #f7fafc);
+                    stroke-width: 1px;
+                    stroke: #e8e8e8;
+                }
+                .checkbox:checked {
+                    background-color: #000;
+                    border-color: #000;
+                    color: #fff;
+                }
+            }
+            .help__right {
+                color: var(--800, #2c5282);
+                font-family: Roboto;
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+// Class for JS
+
+.error {
+    // border: 1px solid red;
+    color: red;
+}
+
+.success {
+    border: 1px solid black;
+}
+
+.notify {
+    display: none;
+    color: red;
+    padding: 10px 0px;
+    font-size: 1.6rem;
+}
